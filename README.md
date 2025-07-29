@@ -2,9 +2,10 @@
 
 ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
 
-This repository contains the code and resources for the research project **"Asthma Attack Prediction Model: A Data-Driven Approach Using SMOTE and Explainable AI"**. This work was presented at the **16th International IEEE Conference on Computing, Communication and Networking Technologies (ICCCNT) 2025**.
+This repository contains the code for the project **"Asthma Attack Prediction Model: A Data-Driven Approach Using SMOTE and Explainable AI"**.
 
-The project focuses on developing a highly accurate machine learning model to predict asthma attacks by analyzing a combination of patient health data, demographic information, and environmental triggers. A key innovation is the integration of Explainable AI (XAI) techniques to ensure the model's predictions are transparent and interpretable for clinical use.
+The project focuses on developing a highly accurate machine learning model to predict asthma attacks by analyzing a combination of patient health data, demographic information, and environmental triggers. 
+A key innovation is the integration of Explainable AI (XAI) techniques to ensure the model's predictions are transparent and interpretable for clinical use.
 
 ---
 
@@ -20,8 +21,6 @@ The project focuses on developing a highly accurate machine learning model to pr
 * [Explainable AI (XAI) Insights](#-explainable-ai-xai-insights)
 * [Future Scope](#-future-scope)
 * [License](#-license)
-* [Acknowledgments](#-acknowledgments)
-* [Publication](#-publication)
 
 ---
 
