@@ -1,10 +1,10 @@
 # Asthma Attack Prediction using Machine Learning and XAI
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
 
-[cite_start]This repository contains the code and resources for the research project **"Asthma Attack Prediction Model: A Data-Driven Approach Using SMOTE and Explainable AI"**[cite: 1, 398]. [cite_start]This work was presented at the **16th International IEEE Conference on Computing, Communication and Networking Technologies (ICCCNT) 2025**[cite: 394, 402].
+This repository contains the code and resources for the research project **"Asthma Attack Prediction Model: A Data-Driven Approach Using SMOTE and Explainable AI"**. This work was presented at the **16th International IEEE Conference on Computing, Communication and Networking Technologies (ICCCNT) 2025**.
 
-[cite_start]The project focuses on developing a highly accurate machine learning model to predict asthma attacks by analyzing a combination of patient health data, demographic information, and environmental triggers[cite: 6]. [cite_start]A key innovation is the integration of Explainable AI (XAI) techniques to ensure the model's predictions are transparent and interpretable for clinical use[cite: 10, 329].
+The project focuses on developing a highly accurate machine learning model to predict asthma attacks by analyzing a combination of patient health data, demographic information, and environmental triggers. A key innovation is the integration of Explainable AI (XAI) techniques to ensure the model's predictions are transparent and interpretable for clinical use.
 
 ---
 
@@ -27,16 +27,16 @@
 
 ## 📖 About The Project
 
-[cite_start]Asthma is a chronic respiratory disease that affects millions of people worldwide, characterized by unpredictable and potentially life-threatening attacks[cite: 5]. [cite_start]Traditional methods for predicting attacks often fall short due to the complex interplay of genetic, environmental, and lifestyle factors[cite: 18].
+[cite_start]Asthma is a chronic respiratory disease that affects millions of people worldwide, characterized by unpredictable and potentially life-threatening attacks[cite: 24]. [cite_start]Traditional methods for predicting attacks often fall short due to the complex interplay of genetic, environmental, and lifestyle factors[cite: 37].
 
-[cite_start]This project leverages machine learning to create a robust predictive model that can provide early warnings for asthma exacerbations[cite: 22]. [cite_start]By analyzing a diverse dataset, our model identifies critical patterns and risk factors[cite: 328]. [cite_start]To move beyond "black-box" predictions, we employ **SHAP (SHapley Additive exPlanations)** and **LIME (Local Interpretable Model-agnostic Explanations)** to make the model's reasoning transparent, building trust and facilitating its adoption in clinical decision-making[cite: 329, 216].
+[cite_start]This project leverages machine learning to create a robust predictive model that can provide early warnings for asthma exacerbations[cite: 41]. By analyzing a diverse dataset, our model identifies critical patterns and risk factors. [cite_start]To move beyond "black-box" predictions, we employ **SHAP (SHapley Additive exPlanations)** and **LIME (Local Interpretable Model-agnostic Explanations)** to make the model's reasoning transparent, building trust and facilitating its adoption in clinical decision-making[cite: 29, 53, 55].
 
 ### Key Features ✨
-* [cite_start]**High-Accuracy Prediction**: The final Random Forest model achieves an accuracy of **97.58%** on the test set[cite: 9, 223].
-* [cite_start]**Data-Driven Approach**: Utilizes a comprehensive dataset including patient history, demographics, and environmental data like Air Quality Index (AQI) and temperature[cite: 24, 6].
-* [cite_start]**Imbalanced Data Handling**: Implements the **Synthetic Minority Over-sampling Technique (SMOTE)** to effectively address class imbalance between attack and non-attack instances, preventing model bias[cite: 29, 140].
-* [cite_start]**Intelligent Feature Selection**: A Random Forest Regressor is used to identify and select the top 10 most influential features, optimizing model performance and reducing noise[cite: 141, 150].
-* [cite_start]**Dual-XAI Framework**: Integrates both SHAP for global feature importance and LIME for case-specific prediction explanations, offering a complete view of the model's behavior[cite: 216, 218].
+* [cite_start]**High-Accuracy Prediction**: The final Random Forest model achieves an accuracy of **97.58%** on the test set[cite: 28, 242].
+* [cite_start]**Data-Driven Approach**: Utilizes a comprehensive dataset including patient history, demographics, and environmental data like Air Quality Index (AQI) and temperature[cite: 25, 43].
+* [cite_start]**Imbalanced Data Handling**: Implements the **Synthetic Minority Over-sampling Technique (SMOTE)** to effectively address class imbalance between attack and non-attack instances, preventing model bias[cite: 26, 48, 159].
+* [cite_start]**Intelligent Feature Selection**: A Random Forest Regressor is used to identify and select the top 10 most influential features, optimizing model performance and reducing noise[cite: 160, 169, 171].
+* [cite_start]**Dual-XAI Framework**: Integrates both SHAP for global feature importance and LIME for case-specific prediction explanations, offering a complete view of the model's behavior[cite: 29, 53, 235].
 
 ---
 
@@ -44,13 +44,13 @@
 
 The project follows a structured methodology from data acquisition to model interpretation:
 
-1.  [cite_start]**Data Acquisition**: The study uses the IEEE asthma dataset, which contains 584 instances and 32 features covering patient and environmental data[cite: 127, 128].
-2.  [cite_start]**Data Pre-processing**: This crucial phase includes handling missing values, removing duplicates, feature scaling (normalization), and outlier detection[cite: 26, 27, 137]. [cite_start]SMOTE is applied to balance the dataset[cite: 29].
-3.  [cite_start]**Exploratory Data Analysis (EDA)**: Visual analysis is performed to understand data distributions and feature relationships[cite: 86].
-4.  [cite_start]**Feature Selection**: The top 10 most predictive features are selected using Random Forest importance scores[cite: 141]. [cite_start]Key selected features include `medication`, `chest_tig`, `pefr`, and `Temp`[cite: 152].
-5.  [cite_start]**Model Training & Tuning**: Twelve different classification algorithms—including Logistic Regression, Decision Tree, Random Forest, and Gradient Boosting—are trained and evaluated[cite: 31, 185]. [cite_start]`GridSearchCV` is used for hyperparameter tuning to optimize performance[cite: 32, 191].
-6.  [cite_start]**Model Evaluation**: Models are rigorously assessed using metrics such as Accuracy, Precision, Recall, and F1-Score[cite: 33, 88].
-7.  [cite_start]**Model Explainability**: SHAP and LIME are applied to the best-performing model to interpret its predictions globally and locally[cite: 89].
+1.  [cite_start]**Data Acquisition**: The study uses the IEEE asthma dataset, which contains 584 instances and 32 features covering patient and environmental data[cite: 146, 147].
+2.  [cite_start]**Data Pre-processing**: This crucial phase includes handling missing values, removing duplicates, feature scaling (normalization), and outlier detection[cite: 156, 158]. [cite_start]SMOTE is applied to balance the dataset[cite: 159].
+3.  [cite_start]**Exploratory Data Analysis (EDA)**: Visual analysis is performed to understand data distributions and feature relationships[cite: 162].
+4.  [cite_start]**Feature Selection**: The top 10 most predictive features are selected using Random Forest importance scores[cite: 171]. [cite_start]Key selected features include `medication`, `chest_tig`, and `pefr`[cite: 171].
+5.  [cite_start]**Model Training & Tuning**: Twelve different classification algorithms—including Logistic Regression, Decision Tree, Random Forest, and Gradient Boosting—are trained and evaluated[cite: 204, 263]. [cite_start]`GridSearchCV` is used for hyperparameter tuning to optimize performance[cite: 51, 210].
+6.  [cite_start]**Model Evaluation**: Models are rigorously assessed using metrics such as Accuracy, Precision, Recall, and F1-Score[cite: 52, 229].
+7.  [cite_start]**Model Explainability**: SHAP and LIME are applied to the best-performing model to interpret its predictions globally and locally[cite: 54, 55, 238, 239].
 
 ---
 
@@ -99,9 +99,9 @@ The entire workflow is contained within the `FDS_Project_FinalCode.ipynb` Jupyte
 
 ## 📊 Results & Evaluation
 
-The models were evaluated on multiple performance metrics. [cite_start]The **Random Forest Classifier** emerged as the top-performing model, demonstrating a superior balance of accuracy and reliability[cite: 223, 321].
+The models were evaluated on multiple performance metrics. [cite_start]The **Random Forest Classifier** emerged as the top-performing model, demonstrating a superior balance of accuracy and reliability[cite: 242, 340].
 
-[cite_start]Here is a summary of the performance of all tested classifiers[cite: 244]:
+[cite_start]Here is a summary of the performance of all tested classifiers[cite: 263]:
 
 | Classifier               | Accuracy | Precision | Recall   | F1-Score |
 | ------------------------ | :------: | :-------: | :------: | :------: |
@@ -123,33 +123,19 @@ The models were evaluated on multiple performance metrics. [cite_start]The **Ran
 
 ## 🧠 Explainable AI (XAI) Insights
 
-* [cite_start]**SHAP Summary Plot**: The SHAP analysis revealed that `medication`, `chest_tig` (chest tightness), and `pefr` (peak expiratory flow rate) are the most significant global predictors[cite: 315]. [cite_start]High values for `medication` and low values for `pefr` strongly influence the model's output[cite: 317].
-* [cite_start]**LIME Plot**: LIME provides explanations for individual predictions[cite: 220]. [cite_start]For example, for a specific "No Asthma Attack" prediction, LIME highlighted that high medication use and low chest tightness were the primary contributing factors[cite: 319].
+* [cite_start]**SHAP Summary Plot**: The SHAP analysis revealed that `medication`, `chest_tig` (chest tightness), and `pefr` (peak expiratory flow rate) are the most significant global predictors[cite: 334]. [cite_start]High values for `medication` and low values for `pefr` strongly influence the model's output[cite: 336].
+* [cite_start]**LIME Plot**: LIME provides explanations for individual predictions[cite: 337]. [cite_start]For example, for a specific "No Asthma Attack" prediction, LIME highlighted that high medication use and low chest tightness were the primary contributing factors[cite: 338].
 
 ---
 
 ## 🔭 Future Scope
 
-[cite_start]Future research can extend this work in several exciting directions[cite: 331]:
-* [cite_start]**Real-time Data Integration**: Incorporate live data from wearable devices and environmental sensors to enhance predictive accuracy[cite: 331].
-* [cite_start]**Longitudinal Analysis**: Integrate long-term patient data, including genetic information and medication compliance, for more personalized predictions[cite: 331].
-* [cite_start]**Advanced Data Fusion**: Combine structured and unstructured data (e.g., clinical notes) to create a more holistic patient profile and improve asthma care[cite: 333].
+Future research can extend this work in several exciting directions:
+* [cite_start]**Real-time Data Integration**: Incorporate live data from wearable devices and environmental sensors to enhance predictive accuracy[cite: 350].
+* [cite_start]**Longitudinal Analysis**: Integrate long-term patient data, including genetic information and medication compliance, for more personalized predictions[cite: 350].
+* [cite_start]**Advanced Data Fusion**: Combine structured and unstructured data (e.g., clinical notes) to create a more holistic patient profile and improve asthma care[cite: 352].
 
 ---
 
 ## 📜 License
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
-
----
-
-## 🙏 Acknowledgments
-I extend my heartfelt gratitude to my co-authors for their invaluable contributions and guidance throughout this research journey:
-* [cite_start]Joel Mathew [cite: 2]
-* [cite_start]Suhas Kesavan [cite: 2]
-* [cite_start]B Uma Maheswari [cite: 2]
-* [cite_start]Amulyashree S [cite: 2]
-
----
-
-## 🎓 Publication
-[cite_start]This research was accepted and virtually presented by Amitesh Panda at the **16th International IEEE Conference on Computing, Communication and Networking Technologies (ICCCNT) 2025**, held from July 6th-11th, 2025, at IIT - Indore, India[cite: 395, 396, 397, 402].
+This project is licensed under the **GNU General Public License v3.0**. See the `LICENSE` file for more details.
